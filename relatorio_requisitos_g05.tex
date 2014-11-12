@@ -1,0 +1,38 @@
+\input{headers/pacotes}
+\input{headers/comandos}
+
+\input{source/informacoes}
+\input{headers/setup}
+
+\begin{document}
+
+	\frontmatter
+		\frenchspacing
+		\imprimircapa
+		\renewcommand{\imprimirorientadorRotulo}{ Orientador: }
+		\imprimirfolhaderosto
+		
+		\input{headers/indiceAutomatico}
+		\input{headers/listasAutomaticas}
+		\input{source/abreviaturas}
+
+	\textual
+
+	\mainmatter
+		\input{source/introducao}
+		\input{source/contexto}
+		\input{source/justificativa}
+		\input{source/processo}
+		\input{source/elicitacao}
+		\input{source/tgr}
+		\input{source/planejamento}
+		\input{source/ferramenta}
+		\input{source/consideracoes}
+		\bibliography{bibliografia}
+		
+	\backmatter
+		\bookmarksetup{startatroot} 
+		\postextual
+    		\printindex
+
+\end{document}
